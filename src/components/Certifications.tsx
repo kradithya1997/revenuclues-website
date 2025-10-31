@@ -73,7 +73,7 @@ export default function Certifications() {
 
         {/* Carousel - Fixed width issues */}
         <div
-          className="relative overflow-hidden w-full"
+          className="relative overflow-hidden w-full -mx-4 sm:mx-0"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
@@ -84,21 +84,21 @@ export default function Certifications() {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {certificates.map((cert, index) => (
-              <div key={index} className="min-w-full flex-shrink-0 px-2 sm:px-4">
-                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div key={index} className="min-w-full flex-shrink-0 px-4 sm:px-4">
+                <div className="bg-white p-6 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
                   {/* Responsive title */}
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#1F1F1F] mb-4 sm:mb-6 text-center px-2">
+                  <h3 className="text-xl sm:text-xl md:text-2xl font-bold text-[#1F1F1F] mb-6 sm:mb-6 text-center">
                     {cert.title}
                   </h3>
                   <div
-                    className="cursor-pointer flex justify-center"
+                    className="cursor-pointer flex justify-center items-center"
                     onClick={() => setSelectedCert(index)}
                   >
                     {/* Responsive image - key fix */}
                     <img
                       src={cert.image}
                       alt={cert.title}
-                      className="max-w-full w-full sm:max-w-md h-auto rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                      className="w-full max-w-[280px] sm:max-w-md h-auto rounded-lg shadow-md active:scale-95 sm:hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                   </div>
