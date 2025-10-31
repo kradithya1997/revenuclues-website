@@ -66,8 +66,9 @@ export default function Hero() {
             I help PLG SaaS founders see what's driving growth — and what's quietly slowing it down.
           </p>
 
-          <p className="text-base md:text-lg mb-12 text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Fast, actionable clarity from your own data — no new tools or dashboards.
+          
+          <p className="text-lg md:text-xl font-bold mb-12 text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          Fast, actionable clarity from your own data — no new tools or dashboards.
           </p>
 
           <button
