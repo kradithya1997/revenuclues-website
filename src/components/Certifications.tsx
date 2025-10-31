@@ -63,17 +63,17 @@ export default function Certifications() {
     >
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header - Responsive text sizing */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-6 sm:mb-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-4 sm:mb-6 md:mb-8">
           <span className="chalk-underline">Certifications</span>
         </h2>
 
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 text-center mb-12 sm:mb-16 max-w-3xl mx-auto leading-relaxed px-4">
+        <p className="text-base sm:text-lg md:text-xl text-gray-700 text-center mb-8 sm:mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed">
           Certified across RevOps, Reporting, and Product Analytics — so your insights come from both experience and expertise.
         </p>
 
         {/* Carousel - Fixed width issues */}
         <div
-          className="relative overflow-hidden w-full -mx-4 sm:mx-0"
+          className="relative overflow-hidden w-full"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
@@ -84,21 +84,21 @@ export default function Certifications() {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {certificates.map((cert, index) => (
-              <div key={index} className="min-w-full flex-shrink-0 px-4 sm:px-4">
-                <div className="bg-white p-6 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+              <div key={index} className="min-w-full flex-shrink-0 px-2 md:px-4">
+                <div className="bg-white p-4 md:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                   {/* Responsive title */}
-                  <h3 className="text-xl sm:text-xl md:text-2xl font-bold text-[#1F1F1F] mb-6 sm:mb-6 text-center">
+                  <h3 className="text-lg md:text-2xl font-bold text-[#1F1F1F] mb-4 md:mb-6 text-center">
                     {cert.title}
                   </h3>
                   <div
-                    className="cursor-pointer flex justify-center items-center"
+                    className="cursor-pointer flex justify-center items-center overflow-hidden"
                     onClick={() => setSelectedCert(index)}
                   >
-                    {/* Responsive image - key fix */}
+                    {/* Responsive image - fully contained on mobile */}
                     <img
                       src={cert.image}
                       alt={cert.title}
-                      className="w-full max-w-[280px] sm:max-w-md h-auto rounded-lg shadow-md active:scale-95 sm:hover:scale-105 transition-transform duration-300"
+                      className="w-full h-auto object-contain max-h-[60vh] md:max-h-none md:max-w-md rounded-lg shadow-md active:scale-95 sm:hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                   </div>
