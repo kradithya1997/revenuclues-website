@@ -34,15 +34,16 @@ export default function Solution() {
   ];
 
   return (
-    <section id="solution" className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-white snap-start scroll-mt-0 overflow-y-auto">
-      <div className="max-w-7xl mx-auto px-6 py-8 w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1F1F1F] text-center mb-4">
+    <section id="solution" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white py-20 snap-start">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-8">
           Get clarity in two weeks.
         </h2>
 
-        <p className="text-sm md:text-base lg:text-lg text-gray-600 text-center mx-auto mb-6 leading-relaxed">
-          In two weeks, I'll map your GTM and product metrics to pinpoint what's working, what's not, and why.
+        <p className="text-lg md:text-xl text-gray-600 text-center mx-auto mb-16 leading-relaxed">
+  In two weeks, I'll map your GTM and product metrics to pinpoint what's working, what's not, and why.
         </p>
+
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {levers.map((lever, index) => {
@@ -52,19 +53,19 @@ export default function Solution() {
                 key={index}
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
-                <div className="w-12 h-12 bg-[#FF7A00] rounded-xl flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-white" />
+                <div className="w-14 h-14 bg-[#FF7A00] rounded-xl flex items-center justify-center mb-6">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
 
-                <h3 className="text-lg md:text-xl font-bold text-[#1F1F1F] mb-3">
+                <h3 className="text-2xl font-bold text-[#1F1F1F] mb-6">
                   {lever.title}
                 </h3>
 
-                <ul className="space-y-2">
+                <ul className="space-y-4">
                   {lever.questions.map((question, qIndex) => (
-                    <li key={qIndex} className="flex items-start gap-2">
-                      <span className="text-[#FF7A00] mt-0.5 text-base">•</span>
-                      <span className="text-xs md:text-sm text-gray-700 leading-relaxed">{question}</span>
+                    <li key={qIndex} className="flex items-start gap-3">
+                      <span className="text-[#FF7A00] mt-1 text-lg">•</span>
+                      <span className="text-base md:text-lg text-gray-700 leading-relaxed">{question}</span>
                     </li>
                   ))}
                 </ul>
