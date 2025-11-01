@@ -53,7 +53,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#0D1B2A] via-[#1F1F1F] to-[#0D1B2A] text-white overflow-hidden snap-start">
+    <section id="hero" className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#0D1B2A] via-[#1F1F1F] to-[#0D1B2A] text-white overflow-hidden snap-start scroll-mt-0">
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-8 min-h-[80px] md:min-h-[100px]">

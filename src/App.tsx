@@ -6,7 +6,7 @@ import Certifications from './components/Certifications';
 
 function App() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
+    <div className="md:snap-y md:snap-mandatory h-screen overflow-y-scroll scroll-smooth">
       <Hero />
       <Pain />
       <Solution />

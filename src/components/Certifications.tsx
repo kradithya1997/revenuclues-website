@@ -52,14 +52,19 @@ export default function Certifications() {
   }, []);
 
   const handleBackToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
-    <section 
-      ref={sectionRef} 
-      id="certifications" 
-      className="min-h-screen flex items-center justify-center bg-[#F9F9F9] py-12 sm:py-16 md:py-20 snap-start relative"
+    <section
+      ref={sectionRef}
+      id="certifications"
+      className="min-h-screen flex items-center justify-center bg-[#F9F9F9] py-12 sm:py-16 md:py-20 snap-start relative scroll-mt-0"
     >
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header - Responsive text sizing */}
@@ -138,16 +143,16 @@ export default function Certifications() {
         </div>
       </div>
 
-      {/* Back to top button - Responsive positioning */}
-      {showBackToTop && (
-        <button
-          onClick={handleBackToTop}
-          className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-12 h-12 sm:w-14 sm:h-14 bg-[#FF7A00] text-white rounded-full flex items-center justify-center opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300 shadow-lg cursor-pointer z-40"
-          aria-label="Back to Top"
-        >
-          <ArrowUp size={20} className="sm:w-6 sm:h-6" />
-        </button>
-      )}
+      {/* Back to top button - Always visible */}
+      <button
+        onClick={handleBackToTop}
+        className={`fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-12 h-12 sm:w-14 sm:h-14 bg-[#FF7A00] text-white rounded-full flex items-center justify-center hover:opacity-100 hover:scale-105 transition-all duration-300 shadow-lg cursor-pointer z-40 ${
+          showBackToTop ? 'opacity-70' : 'opacity-40 hover:opacity-70'
+        }`}
+        aria-label="Back to Top"
+      >
+        <ArrowUp size={20} className="sm:w-6 sm:h-6" />
+      </button>
 
       {/* Modal - Responsive fixes */}
       {selectedCert !== null && (

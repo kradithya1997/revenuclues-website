@@ -2,7 +2,7 @@ import { Linkedin, Mail } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center bg-white py-20 snap-start">
+    <section id="about" className="min-h-screen flex items-center justify-center bg-white py-20 snap-start scroll-mt-0">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-16">
           <span className="chalk-underline">About Me</span>
