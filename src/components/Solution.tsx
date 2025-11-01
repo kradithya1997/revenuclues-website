@@ -44,7 +44,7 @@ export default function Solution() {
           In two weeks, I'll map your GTM and product metrics to pinpoint what's working, what's not, and why.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-4 mb-8 w-full px-4">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {levers.map((lever, index) => {
             const Icon = lever.icon;
             return (
@@ -74,7 +74,7 @@ export default function Solution() {
         </div>
 
         <div className="bg-[#0D1B2A] text-white p-6 md:p-8 rounded-2xl shadow-2xl max-w-3xl mx-auto text-center w-full px-4">
-          <p className="text-xs md:text-base mb-3 leading-relaxed">
+          <p className="text-s md:text-base mb-3 leading-relaxed">
             You'll get a pointed, data-backed insight pack on what's working, why it's working, and where to focus next.
           </p>
 
@@ -84,7 +84,7 @@ export default function Solution() {
 
           <button
             onClick={() => window.open('https://calendar.app.google/HXsmD9MhuU6LEXUM7', '_blank')}
-            className="bg-[#FF7A00] text-white px-8 py-3 rounded-[20px] text-base md:text-lg font-semibold hover:bg-[#FF8C1A] hover:scale-105 transition-all duration-300 shadow-xl"
+            className="bg-[#FF7A00] text-white px-8 py-4 rounded-[20px] text-base md:text-lg font-semibold hover:bg-[#FF8C1A] hover:scale-105 transition-all duration-300 shadow-xl"
           >
             Let's work together
           </button>
