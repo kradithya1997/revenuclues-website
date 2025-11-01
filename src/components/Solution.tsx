@@ -76,19 +76,6 @@ export default function Solution() {
         </div>
       </div>
 
-      {/* Pricing card — fits into same viewport */}
-      <div className="text-center mt-auto">
-        <p className="text-xl text-gray-700 mb-4 font-medium">
-          Engagement starts at <span className="font-bold text-[#FF7A00]">$350 USD</span>
-        </p>
-        <button className="bg-[#FF7A00] hover:bg-[#e56e00] text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg">
-          Let’s work together
-        </button>
-      </div>
-    </div>
-  </section>
-)
-
 
         <div className="bg-[#0D1B2A] text-white p-6 md:p-8 rounded-2xl shadow-2xl max-w-3xl mx-auto text-center w-full px-4">
           <p className="text-s md:text-base mb-3 leading-relaxed">
