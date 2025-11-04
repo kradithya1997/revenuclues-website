@@ -64,7 +64,7 @@ export default function Certifications() {
     <section
       ref={sectionRef}
       id="certifications"
-      className="hidden lg:flex min-h-screen items-center justify-center bg-[#F9F9F9] py-12 sm:py-16 md:py-20 snap-start relative"
+      className="hidden lg:flex min-h-screen items-center justify-center bg-[#F9F9F9] py-12 sm:py-16 md:py-20 relative"
     >
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header - Responsive text sizing */}
