@@ -34,8 +34,8 @@ export default function Solution() {
   ];
 
   return (
-    <section id="solution" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-white py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="solution" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-white py-12 md:py-20 pb-24 md:pb-20">
+      <div className="max-w-7xl mx-auto px-6 w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-8">
           Get clarity in two weeks.
         </h2>
@@ -44,7 +44,7 @@ export default function Solution() {
           In two weeks, I'll map your GTM and product metrics to pinpoint what's working, what's not, and why.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16 w-full px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16 w-full px-0 md:px-4">
           {levers.map((lever, index) => {
             const Icon = lever.icon;
             return (
@@ -73,7 +73,7 @@ export default function Solution() {
           })}
         </div>
 
-        <div className="bg-[#0D1B2A] text-white p-8 md:p-10 rounded-3xl shadow-2xl max-w-4xl mx-auto text-center w-full px-4">
+        <div className="bg-[#0D1B2A] text-white p-6 md:p-10 rounded-3xl shadow-2xl max-w-4xl mx-auto text-center w-full px-4 md:px-0">
           <p className="text-sm md:text-lg mb-4 md:mb-6 leading-relaxed">
             You'll get a pointed, data-backed insight pack on what's working, why it's working, and where to focus next.
           </p>
