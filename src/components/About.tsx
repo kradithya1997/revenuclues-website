@@ -2,7 +2,7 @@ import { Linkedin, Mail } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center bg-white py-20 snap-start scroll-mt-0">
+    <section id="about" className="min-h-screen flex items-center justify-center bg-white py-20 snap-start">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-16">
           <span className="chalk-underline">About Me</span>
@@ -13,7 +13,7 @@ export default function About() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#FF7A00] to-[#FF8C1A] rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
               <img
-                src="https://raw.githubusercontent.com/kradithya1997/revenueclues-assets/main/UConnHartfordHeadshots_12.jpg"
+                src="https://raw.githubusercontent.com/adithyakr/revenueclues-assets/main/UConnHartfordHeadshots_12.jpg"
                 alt="Adithya"
                 className="relative w-full max-w-md rounded-2xl shadow-2xl object-cover aspect-square"
                 loading="lazy"

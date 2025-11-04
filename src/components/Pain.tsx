@@ -29,7 +29,7 @@ export default function Pain() {
   ];
 
   return (
-    <section id="pain" className="min-h-screen flex items-center justify-center bg-white py-20 snap-start scroll-mt-0">
+    <section id="pain" className="min-h-screen flex items-center justify-center bg-white py-20 snap-start">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-[#1F1F1F] text-center mb-16">
           What Slows Founders Down

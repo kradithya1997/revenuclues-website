@@ -53,7 +53,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#0D1B2A] via-[#1F1F1F] to-[#0D1B2A] text-white overflow-hidden snap-start scroll-mt-0">
+    <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#0D1B2A] via-[#1F1F1F] to-[#0D1B2A] text-white overflow-hidden snap-start">
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-8 min-h-[80px] md:min-h-[100px]">
@@ -66,8 +66,7 @@ export default function Hero() {
             I help PLG SaaS founders see what's driving growth — and what's quietly slowing it down.
           </p>
 
-          
-          <p className="text-lg md:text-xl font-bold mb-12 text-white max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg mb-12 text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Fast, actionable clarity from your own data — no new tools or dashboards.
           </p>
 
