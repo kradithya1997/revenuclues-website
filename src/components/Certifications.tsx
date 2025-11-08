@@ -73,7 +73,7 @@ export default function Certifications() {
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl text-gray-700 text-center mb-8 sm:mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed">
-          Certified across RevOps, Reporting, and Product Analytics — so your insights come from both experience and expertise.
+          HubSpot RevOps Certified | HubSpot Reporting & Analytics Certified | Product Analytics Certified (Product School)
         </p>
 
         {/* Carousel - Fixed width issues */}
@@ -139,7 +139,7 @@ export default function Certifications() {
 
         {/* Footer - Responsive spacing */}
         <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-gray-300">
-          <p className="text-center text-sm sm:text-base text-gray-600">All rights reserved</p>
+          <p className="text-center text-sm sm:text-base text-gray-600">Because you can't fix what you can't see — let's build your GTM to scale cleanly.</p>
         </div>
       </div>
 

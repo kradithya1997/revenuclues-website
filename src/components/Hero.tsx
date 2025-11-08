@@ -6,7 +6,7 @@ export default function Hero() {
   const [showCursor, setShowCursor] = useState(true);
   const [showArrow, setShowArrow] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const fullText = 'Every number tells a story';
+  const fullText = 'Engineer your GTM foundation before chaos hits.';
   const typingSpeed = 80;
 
   useEffect(() => {
@@ -62,13 +62,13 @@ export default function Hero() {
         </h1>
 
         <div className={`transition-all duration-700 ${showSubheadline ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <p className="text-xl md:text-2xl mb-6 text-gray-300 font-medium leading-relaxed">
-            I help PLG SaaS founders see what's driving growth — and what's quietly slowing it down.
+          <p className="text-xl md:text-2xl mb-6 text-white font-bold leading-relaxed">
+            Fast, structured, and data-ready GTM setup — so your next 100 customers don't create operational debt.
           </p>
 
-          
-          <p className="text-lg md:text-xl font-bold mb-12 text-white max-w-3xl mx-auto leading-relaxed">
-            Fast, actionable clarity from your own data — no new tools or dashboards.
+
+          <p className="text-lg md:text-xl font-medium mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            RevenueClues helps early-stage SaaS founders build clean GTM systems, structured CRMs, and investor-ready visibility — before hiring RevOps.
           </p>
 
           <button
